@@ -19,6 +19,7 @@ env:
   DOTNET_NOLOGO: true
   NuGetDirectory: ${{ github.workspace}}/nuget
   ArCoreGroupId: com.google.ar
+  LocalGroupIdPath: com/google/ar
   ArCoreArtifactId: core
   ArCoreVersion: 1.41.0
   MavenRepository: https://maven.google.com/
@@ -53,9 +54,8 @@ jobs:
 
       - name: Copy the native ARCore library to the project folder
         run: |
-          $groupIdPath = '${{ env.ArCoreGroupId }}' -replace '\.', '/'
           $filename = "${{ env.ArCoreArtifactId }}-${{ env.ArCoreVersion }}.aar"
-          $sourcePath = "${{ env.LocalMavenRepo }}/$groupIdPath/${{ env.ArCoreArtifactId }}/${{ env.ArCoreVersion }}/$filename"
+          $sourcePath = "${{ env.LocalMavenRepo }}/${{ env.LocalGroupIdPath }}/${{ env.ArCoreArtifactId }}/${{ env.ArCoreVersion }}/$filename"
           cp $sourcePath ./arcore.aar
       
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
