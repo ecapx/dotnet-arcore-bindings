@@ -54,9 +54,7 @@ jobs:
 
       - name: Copy the native ARCore library to the project folder
         run: |
-          $filename = "${{ env.ArCoreArtifactId }}-${{ env.ArCoreVersion }}.aar"
-          $sourcePath = "${{ env.LocalMavenRepo }}/${{ env.LocalGroupIdPath }}/${{ env.ArCoreArtifactId }}/${{ env.ArCoreVersion }}/$filename"
-          cp $sourcePath ./arcore.aar
+          cp ${{ env.LocalMavenRepo }}/${{ env.LocalGroupIdPath }}/${{ env.ArCoreArtifactId }}/${{ env.ArCoreVersion }}/${{ env.ArCoreArtifactId }}-${{ env.ArCoreVersion }}.aar ./arcore.aar
       
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
       - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
