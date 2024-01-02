@@ -49,7 +49,7 @@ jobs:
         run: echo "LocalMavenRepo=$(mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout)" >> $GITHUB_ENV
         
       - name: Download the native ARCore library using Maven
-        run: mvn org.apache.maven.plugins:maven-dependency-plugin:3.6.1:get -Dartifact=${{ env.ArCoreGroupId }}:${{ env.ArCoreArtifactId }}:${{ env.ARCoreVersion }}:aar -DremoteRepositories=${{ env.MavenRepository }} -Dtransitive=false -DoutputDirectory=./
+        run: mvn org.apache.maven.plugins:maven-dependency-plugin:3.6.1:get -Dartifact=${{ env.ArCoreGroupId }}:${{ env.ArCoreArtifactId }}:${{ env.ArCoreVersion }}:aar -DremoteRepositories=${{ env.MavenRepository }} -Dtransitive=false -DoutputDirectory=./
 
       - name: Copy the native ARCore library to the project folder
         run: |
