@@ -27,6 +27,16 @@
     <None Include="README.md" Pack="true" PackagePath=""/>
   </ItemGroup>
 
+  <!-- 
+  Conditionally include Additions.cs file.
+  This ItemGroup includes Additions.cs only when the 'NoAdditions' property is not set to true.
+  It allows for conditional compilation, enabling the exclusion of Additions.cs during certain build processes,
+  such as when generating binding code where Additions.cs might cause build issues due to missing dependencies.
+  -->
+  <ItemGroup Condition="'$(NoAdditions)'!='true'">
+    <Compile Include="Additions/Additions.cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <None Remove="arcore.aar" />
   </ItemGroup>
