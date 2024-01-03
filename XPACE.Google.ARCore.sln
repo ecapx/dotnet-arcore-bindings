@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34407.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPACE.Google.ARCore", "XPACE.Google.ARCore\XPACE.Google.ARCore.csproj", "{F7A908E8-D9E9-4856-A8BA-1860557EA1FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPACE.Google.ARCore", "XPACE.Google.ARCore.csproj", "{F7A908E8-D9E9-4856-A8BA-1860557EA1FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
