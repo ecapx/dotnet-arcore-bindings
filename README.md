@@ -1,4 +1,6 @@
-﻿# .NET Bindings for Google ARCore
+﻿# .NET Bindings for Google ARCore ![Nuget](https://img.shields.io/nuget/v/XPACE.Google.ARCore) ![Build](https://github.com/ecapx/dotnet-arcore-bindings/actions/workflows/publish.yml/badge.svg)
+
+
 
 This repository contains updated .NET bindings for the [Google ARCore](https://developers.google.com/ar?hl=de) library for use with e.g. .NET MAUI.
 
