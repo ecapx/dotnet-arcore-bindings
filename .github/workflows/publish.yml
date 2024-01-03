@@ -60,7 +60,7 @@ jobs:
           cp ${{ env.LocalMavenRepo }}/${{ env.LocalGroupIdPath }}/${{ env.ArCoreArtifactId }}/${{ env.ArCoreVersion }}/${{ env.ArCoreArtifactId }}-${{ env.ArCoreVersion }}.aar ./arcore.aar
       
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
-      - run: dotnet build /p:NoAdditions=true && dotnet build && dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
+      - run: dotnet build --configuration Release /p:NoAdditions=true && dotnet build --configuration Release && dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
       
       # Publish the NuGet package as an artifact, so they can be used in the following jobs
       - uses: actions/upload-artifact@v3
