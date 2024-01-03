@@ -1,4 +1,4 @@
-﻿# .NET Bindings for Google ARCore ![Nuget](https://img.shields.io/nuget/v/XPACE.Google.ARCore) ![Build](https://github.com/ecapx/dotnet-arcore-bindings/actions/workflows/publish.yml/badge.svg)
+﻿# .NET Bindings for Google ARCore [![Nuget](https://img.shields.io/nuget/v/XPACE.Google.ARCore)](https://www.nuget.org/packages/XPACE.Google.ARCore) ![Build](https://github.com/ecapx/dotnet-arcore-bindings/actions/workflows/publish.yml/badge.svg)
 
 
 
