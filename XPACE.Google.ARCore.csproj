@@ -5,7 +5,7 @@
     <Version>1.41.0-alpha</Version>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>DotNetAndroidARCoreBindings</RootNamespace>
+    <RootNamespace>XPACE.Google.ARCore</RootNamespace>
     <EnablePackageValidation>true</EnablePackageValidation>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
