@@ -8,10 +8,10 @@ The published bindings are only tested to the extent that they compile and can r
 
 ## Installation
 
-The bindings are available on [NuGet]().
+The bindings are available on [NuGet](https://www.nuget.org/packages/XPACE.Google.ARCore/).
 
 ```bash
-dotnet add package
+dotnet add package XPACE.Google.ARCore
 ```
 
 ## Usage
