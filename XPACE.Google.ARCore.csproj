@@ -13,6 +13,7 @@
     <Authors>Marian Lambert</Authors>
     <Description>.NET Bindings for Google ARCore</Description>
     <PackageTags>arcore, bindings, android, maui</PackageTags>
+    <PackageProjectUrl>https://github.com/ecapx/dotnet-arcore-bindings/blob/main/README.md</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup>
